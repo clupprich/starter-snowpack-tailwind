@@ -1,0 +1,29 @@
+
+{{!< default}}
+
+<div class="container">
+    <h1>{{statusCode}}</h1>
+    <p>{{message}}</p>
+    <p><a href="{{@site.url}}">Go to the front page</a></p>
+
+    {{#if errorDetails}}
+    <section>
+        <h4>Theme errors:</h4>
+        <ul>
+            {{#foreach errorDetails}}
+            <li>
+                <h5>{{{rule}}}</h5>
+
+                {{#foreach failures}}
+                <span><strong>Ref:</strong> {{ref}}</span><br>
+                <span><strong>Message:</strong> {{message}}</span>
+                {{/foreach}}
+            </li>
+            {{/foreach}}
+        </ul>
+    </section>
+    {{/if}}
+
+
+
+</div>

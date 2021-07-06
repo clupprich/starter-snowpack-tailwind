@@ -1,0 +1,12 @@
+{{!< default}}
+
+<header>
+  <h1 class="text-2xl"><a href="{{@site.url}}">{{@site.title}}</a></h1>
+  <p>{{@site.description}}</p>
+</header>
+
+<div class="container">
+  {{#foreach posts}}
+  {{> "card"}} {{!-- partials/card.hbs --}}
+  {{/foreach}}
+</div>

@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .kg-width-wide {
+    }
+
+    .kg-width-full {
+    }
+
+    .kg-embed-card {
+    }
+
+    .kg-bookmark-card {
+    }
+
+    .kg-bookmark-container {
+    }
+
+    .kg-bookmark-content {
+    }
+
+    .kg-bookmark-thumbnail {
+    }
+
+    .kg-bookmark-title {
+    }
+
+    .kg-bookmark-description {
+    }
+
+    .kg-bookmark-metadata {
+    }
+
+    .kg-bookmark-icon {
+    }
+
+    .kg-bookmark-author {
+    }
+
+    .kg-bookmark-publisher  {
+    }
+
+    .kg-gallery-container {
+    }
+
+    .kg-gallery-row {
+    }
+}

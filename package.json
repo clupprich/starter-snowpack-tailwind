@@ -1,0 +1,42 @@
+{
+  "name": "starter-snowpack-tailwind",
+  "version": "1.0.0",
+  "description": "A custom theme for ghost powered by Snowpack & Tailwind CSS",
+  "main": "index.js",
+  "scripts": {
+    "dev": "snowpack build --watch",
+    "test": "gscan .",
+    "build": "snowpack build"
+  },
+  "repository": "github:clupprich/starter-snowpack-tailwind",
+  "keywords": [
+    "ghost",
+    "theme",
+    "ghost-theme"
+  ],
+  "engines": {
+    "ghost-api": "v4"
+  },
+  "author": {
+    "name": "Christoph Lupprich",
+    "email": "christoph@luppri.ch"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/clupprich/starter-snowpack-tailwind/issues"
+  },
+  "homepage": "https://github.com/clupprich/starter-snowpack-tailwind",
+  "devDependencies": {
+    "@snowpack/plugin-postcss": "^1.4.3",
+    "@tailwindcss/aspect-ratio": "^0.2.1",
+    "gscan": "^4.1.0",
+    "postcss": "^8.3.5",
+    "snowpack": "^3.7.1",
+    "tailwindcss": "^2.2.4"
+  },
+  "dependencies": {
+    "@tailwindcss/line-clamp": "^0.2.1",
+    "@tailwindcss/typography": "^0.4.1",
+    "autoprefixer": "^10.2.6"
+  }
+}
