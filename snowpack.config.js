@@ -14,10 +14,20 @@ module.exports = {
   ],
   mount: {
     './assets': '/',
-    './': '/_root'
+    './': '/'
   },
   plugins: [
-    '@snowpack/plugin-postcss'
+    '@snowpack/plugin-postcss',
+    ['snowpack-plugin-content-replace',
+      {
+        'replacements': {
+          'default.hbs': {
+            '{{asset "built/css/screen.css"}}': '{{asset "css/screen.css"}}',
+            '{{asset "built/js/index.js"}}' : '{{asset "js/index.js"}}'
+          }
+        }
+      }
+    ],
   ],
   packageOptions: {
   },

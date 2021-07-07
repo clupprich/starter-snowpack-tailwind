@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "snowpack build --watch",
     "test": "gscan .",
-    "build": "snowpack build"
+    "build": "snowpack build",
+    "dist": "mkdir dist && cd assets/built && zip -r ../../dist/release ."
   },
   "repository": "github:clupprich/starter-snowpack-tailwind",
   "keywords": [
@@ -32,6 +33,7 @@
     "gscan": "^4.1.0",
     "postcss": "^8.3.5",
     "snowpack": "^3.7.1",
+    "snowpack-plugin-content-replace": "^1.0.0",
     "tailwindcss": "^2.2.4"
   },
   "dependencies": {
