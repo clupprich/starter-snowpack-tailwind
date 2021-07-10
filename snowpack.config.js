@@ -13,21 +13,11 @@ module.exports = {
     '**/snowpack.config.js',
   ],
   mount: {
-    './assets': '/',
+    './assets': '/assets',
     './': '/'
   },
   plugins: [
-    '@snowpack/plugin-postcss',
-    ['snowpack-plugin-content-replace',
-      {
-        'replacements': {
-          'default.hbs': {
-            '{{asset "built/css/screen.css"}}': '{{asset "css/screen.css"}}',
-            '{{asset "built/js/index.js"}}' : '{{asset "js/index.js"}}'
-          }
-        }
-      }
-    ],
+    '@snowpack/plugin-postcss'
   ],
   packageOptions: {
   },
@@ -35,7 +25,8 @@ module.exports = {
     tailwindConfig: './tailwind.config.js',
   },
   buildOptions: {
-    out: './assets/built'
+    out: './dist',
+    clean: false
   },
   optimize: {
     bundle: true,

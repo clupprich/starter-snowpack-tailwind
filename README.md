@@ -16,7 +16,19 @@ npm install
 npm run dev
 ```
 
-Now you can edit your CSS and JS assets (located in `/assets`) and even your templates (the `*.hbs` files in the root directory), and the transformed CSS and JS will be placed into `/assets/built`. You just need to refresh your browser to pick them up.
+Now you can edit your CSS and JS assets (located in `/assets`) and even your templates (the `*.hbs` files in the root directory), and the transformed templates, CSS and JS will be placed into `/dist`.
+
+To make your local Ghost installation use this theme, please create a symlink to the `/dist` folder, like so:
+
+```bash
+cd <PATH OF YOUR LOCAL GHOST INSTALLATION>/content/themes
+ln -s <PATH OF THE THEME>/dist/ starter-snowpack-tailwind
+
+# So the theme gets picked up
+ghost restart
+```
+
+Once that's done, you can activate the theme. For changes to show up, you need to refresh your browser. I'm looking into adding livereload or a similar solution in the future.
 
 # Release
 
