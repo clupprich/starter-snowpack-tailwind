@@ -6,7 +6,6 @@ module.exports = {
   exclude: [
     '**/node_modules/**/*',
     '**/LICENSE',
-    '**/package.json',
     '**/package-lock.json',
     '**/postcss.config.js',
     '**/tailwind.config.js',
