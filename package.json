@@ -29,16 +29,14 @@
   "homepage": "https://github.com/clupprich/starter-snowpack-tailwind",
   "devDependencies": {
     "@snowpack/plugin-postcss": "^1.4.3",
-    "@tailwindcss/aspect-ratio": "^0.2.1",
-    "gscan": "^4.1.0",
-    "postcss": "^8.3.5",
+    "@tailwindcss/aspect-ratio": "^0.4.0",
+    "@tailwindcss/line-clamp": "^0.3.1",
+    "@tailwindcss/typography": "^0.5.0",
+    "autoprefixer": "^10.4.2",
+    "gscan": "^4.22.0",
+    "postcss": "^8.4.5",
     "snowpack": "^3.7.1",
     "snowpack-plugin-content-replace": "^1.0.0",
-    "tailwindcss": "^2.2.4"
-  },
-  "dependencies": {
-    "@tailwindcss/line-clamp": "^0.2.1",
-    "@tailwindcss/typography": "^0.4.1",
-    "autoprefixer": "^10.2.6"
+    "tailwindcss": "^3.0.15"
   }
 }
